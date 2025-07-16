@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LowStockAlertDialog</class>
+ <widget class="QDialog" name="LowStockAlertDialog">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>450</width><height>300</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Low Stock Alert</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <item>
+    <widget class="QLabel" name="lblMessage">
+     <property name="text">
+      <string>The following items are low in stock:</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QTableWidget" name="tblLowStock">
+     <column>
+      <property name="text">
+       <string>ID</string>
+</property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Quantity</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btnClose">
+     <property name="text"><string>Close</string></property>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
